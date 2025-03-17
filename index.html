@@ -48,6 +48,23 @@
             color: #09c;
             text-decoration: underline;
         }
+      .slider {
+            width: 80%;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: 400%; /* 根据图片数量调整 */
+            animation: slide 20s linear infinite; /* 使用linear过渡 */
+        }
+        .slides img {
+            width: 100%;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-200%); } /* 总位移为图片总宽度 */
+        }
     </style>
 </head>
 <body>
@@ -108,6 +125,15 @@
         <li>创作灵感来源：<a href=https://deadcells.wiki.gg/zh/wiki/Dead_Cells_Wiki>Dead Cells</a>, <a href=https://zh.wikipedia.org/wiki/%E9%9A%BB%E7%8B%BC%EF%BC%9A%E6%9A%97%E5%BD%B1%E9%9B%99%E6%AD%BB>Sekiro</a></li>
         <li>特别感谢：<a href=https://www.xjtu.edu.cn/jsnr.jsp?wbtreeid=1632&wbwbxjtuteacherid=1593>王嘉寅老师</a>对我们的游戏进行了配音</li>
       </ul>
+      <div class="slider">
+        <div class="slides">
+            <img src="https://cdn.luogu.com.cn/upload/image_hosting/py5by2ff.png?x-oss-process=image/resize,m_lfit,h_170,w_225" alt="Image 1">
+            <img src="https://cdn.luogu.com.cn/upload/image_hosting/py5by2ff.png?x-oss-process=image/resize,m_lfit,h_170,w_225" alt="Image 2">
+            <img src="https://cdn.luogu.com.cn/upload/image_hosting/py5by2ff.png?x-oss-process=image/resize,m_lfit,h_170,w_225" alt="Image 3">
+            <img src="https://cdn.luogu.com.cn/upload/image_hosting/py5by2ff.png?x-oss-process=image/resize,m_lfit,h_170,w_225" alt="Image 4">
+        </div>
+    </div>
+      <br><br><br><br>
     </div>
     </div>
   
