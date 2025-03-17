@@ -49,21 +49,22 @@
             text-decoration: underline;
         }
       .slider {
-            width: 80%;
+            width: 70%;
             overflow: hidden;
             position: relative;
         }
         .slides {
             display: flex;
-            width: 400%; /* 根据图片数量调整 */
-            animation: slide 20s linear infinite; /* 使用linear过渡 */
+            width: 300%; /* 根据图片数量调整 */
+            animation: slide 10s linear infinite; /* 使用linear过渡 */
         }
         .slides img {
-            width: 100%;
+            width: 40%;
+          margin:0 1%;
         }
         @keyframes slide {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-200%); } /* 总位移为图片总宽度 */
+            100% { transform: translateX(-50%); } /* 总位移为图片总宽度 */
         }
     </style>
 </head>
@@ -100,7 +101,7 @@
             <li>P:跳关</li>
             <li>I:获取按键信息</li>
             <li>鼠标左键:攻击</li>
-            剩下的到游戏里再探索吧。
+            我们在游戏里有详细的介绍，剩下的到游戏里再探索吧。
           </ul></li>
         </ul>        
         <hr>
