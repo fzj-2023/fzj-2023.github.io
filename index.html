@@ -66,6 +66,10 @@
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); } /* 总位移为图片总宽度 */
         }
+    iframe {
+            width: 90%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -98,10 +102,14 @@ I:查看按键信息<br>
 我们在游戏里有详细的介绍，剩下的到游戏里再探索吧。</p>
       
         <p>游戏视频与照片</p>
-      <video width="80%" margin="auto" height="auto" controls>
-            <source src="game_trailer.mp4.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+      <iframe 
+        src="https://player.bilibili.com/player.html?bvid=BV1L4411U7Fj&page=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
         <div class="container">
             <img width=70% src="https://github.com/fzj-2023/fzj-2023.github.io/blob/main/Start.png?raw=true" alt="Screenshot 1">
             <img width=70% src="https://github.com/fzj-2023/fzj-2023.github.io/blob/main/Intro.png?raw=true" alt="Screenshot 2">
